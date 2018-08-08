@@ -95,9 +95,9 @@ Time spent: **{{time_spent}}** hours spent in total
 * [X] Add testing for CRUD category:
   * [X] Validation testing
   * [X] Database testing
-* [ ] Add testing for CRUD books:
-  * [ ] Validation testing
-  * [ ] Database testing
+* [X] Add testing for CRUD books:
+  * [X] Validation testing
+  * [X] Database testing
 * [ ] Add testing for lending books:
   * [ ] Validation testing
   * [ ] Database testing
