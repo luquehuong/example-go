@@ -4,7 +4,6 @@ import (
 	"context"
 
 	"github.com/jinzhu/gorm"
-
 	"github.com/luquehuong/example-go/domain"
 )
 

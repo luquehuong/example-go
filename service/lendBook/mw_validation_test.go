@@ -173,40 +173,6 @@ func Test_validationMiddleware_Find(t *testing.T) {
 	}
 }
 
-func Test_validationMiddleware_Update(t *testing.T) {
-	type fields struct {
-		Service Service
-	}
-	type args struct {
-		ctx      context.Context
-		lendBook *domain.LendBook
-	}
-	tests := []struct {
-		name    string
-		fields  fields
-		args    args
-		want    *domain.LendBook
-		wantErr bool
-	}{
-		// TODO: Add test cases.
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			mw := validationMiddleware{
-				Service: tt.fields.Service,
-			}
-			got, err := mw.Update(tt.args.ctx, tt.args.lendBook)
-			if (err != nil) != tt.wantErr {
-				t.Errorf("validationMiddleware.Update() error = %v, wantErr %v", err, tt.wantErr)
-				return
-			}
-			if !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("validationMiddleware.Update() = %v, want %v", got, tt.want)
-			}
-		})
-	}
-}
-
 func Test_validationMiddleware_Delete(t *testing.T) {
 	type fields struct {
 		Service Service
